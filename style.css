@@ -1,0 +1,326 @@
+/*Reset CSS*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+}
+
+/*
+1. Out to In
+2. Up to Down
+3. Left to Right(Tổng quan chi tiết)
+*/
+
+/*
+1. Vị trí
+2. Kích thước(width, height)
+3. Màu sắc
+4. Kiểu dáng(kiểu chữ, hình tròn, vuông...)
+*/
+
+/*Common*/
+
+#body {
+    
+}
+
+#main {
+    
+}
+
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    /* height: 46px; */
+    background-color: rgb(63, 61, 61);
+    z-index: 1; /*   làm cho header nổi lên trên slider   */
+}
+
+/*  Nav  */
+#nav {
+    
+}
+
+.nav-bar > li {
+    /* height: 45px; */
+    width: 100px;
+    padding: 10px 0;
+    text-align: center;
+    display: inline-block;  
+}
+
+.nav-bar li a {
+    font-size: 16px;
+    color: rgba(245, 245, 245, 0.884);
+    text-decoration: none;
+}
+
+/*  Slider  */
+#slider {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    padding-top: 15%; /*tỉ lệ với chiều ngang của chính nó ~ 50% width*/
+    background: url('/assets/image/header.jpg') top center / cover no-repeat;
+    color: white;
+    text-align: center;
+    background-size: cover;
+}   
+
+.container-slider { 
+    padding: 0 48px;
+}
+
+.slider-title {
+    margin: 43px 0 0;
+    font-size: 64px;
+}
+
+.slider-slogan {
+    margin: 27px 0;
+    font-size: 32px;
+}
+
+.slider-desc {
+    margin-top: 21px;
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+/*  Content  */
+#content {
+
+}
+
+#section-music {
+    padding: 32px 48px;
+    color: white;
+    background-color: #252529;
+    text-align: center;
+}
+
+.music-title {
+    font-size: 40px;
+}
+
+.music-slogan {
+    margin: 32px 0;
+    font-size: 32px;
+}
+
+.music-desc-up {
+    margin: 21px 0;
+    font-size: 21px;
+    line-height: 1.6;
+}
+
+.music-btn {
+    display: inline-block;
+    margin-bottom: 16px;
+    padding: 16px;
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+    background-color: #b90415;
+}
+
+.music-desc-down {
+    margin: 16px 0;
+    font-size: 16px;
+}
+
+.music-img {
+    /* width: 100%; */
+}
+
+
+#section-video {
+    padding: 32px 48px;
+    text-align: center;
+}
+
+.video-slogan {
+    margin: 32px 0;
+    font-size: 32px;
+}
+
+.video-desc {
+    margin: 21px 0;
+    font-size: 21px;
+    line-height: 1.6;
+}
+
+.video-btn {
+    display: inline-block;
+    padding: 16px;
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+    background-color: #103063;
+}
+
+.video-img {
+    /* width: 100%; */
+}
+
+#section-entertain {
+    padding: 10rem 0;
+    min-height: 20vh;
+    width: 100%;
+    background: url('/assets/image/section-bg.jpeg') bottom / cover no-repeat;
+    color: white;
+
+}
+
+.contain-entertain {
+    text-align: center;
+    margin: 0 15%;
+    padding: 0 48px;
+}
+
+.entertain-slogan {
+    margin: 32px 0;
+    font-size: 26px;
+}
+
+.entertain-desc {
+    margin: 21px 0;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+
+#section-giftcard {   
+    /* height: 43vh; */
+    padding: 32px 0;
+    
+    /* margin-bottom: 70px; */
+}
+
+.contain-giftcard {
+    /* height: 35vh; */
+    margin: 0 15%;
+    padding: 0 48px;
+    display: flex;
+}
+
+.giftcard { 
+    display: block;
+    /* background-color: black; */
+    /* float: left; */
+    width: 50%;
+}
+
+.giftcard-img {
+    max-width: 50%;
+    margin-right: 20px;
+}
+
+/* .clear {
+    clear: both;
+} */
+
+.giftcard-content {
+    display: block;
+    float: right;
+    width: 50%;
+    text-align: left;
+    line-height: 1.6;
+}
+
+.giftcard-title {
+    margin: 24px 0;
+    font-size: 20px;
+}
+
+.giftcard-desc {
+    margin: 16px 0;
+    font-size: 14px;
+}
+
+.giftcard-question {
+    margin: 16px 0;
+    font-size: 14px;
+}
+
+.giftcard-line {
+    margin: 16px 0;
+    height: 1px;
+    background-color: rgb(158, 158, 158);
+}
+
+.giftcard-text {
+    color: rgb(38, 38, 75);
+    text-decoration: none;
+}
+
+
+/* Footer */
+#footer {
+    background-color: #252529;
+    /* justify-content: center; */
+}
+
+.footer-menu {
+    /* max-height: 30vh; */
+    padding: 0 48px;
+    margin: 0 122px;
+}
+
+.footer-cols {
+    padding: 32px;
+    font-size: 14px;
+    display: flex;
+    /* text-align: center; */
+    color: whitesmoke;
+    line-height: 1.8;
+}
+
+.footer-title {
+    margin-bottom: 16px;
+    padding-bottom: 8px;
+    font-size: 19px;
+    border-bottom: solid rgb(145, 145, 145) 1px;
+}
+
+.footer-cols li {
+    list-style-type: none;
+    /* text-align: center; */
+}
+
+.footer-cols li a {
+    text-decoration: none;
+    text-align: left;
+    color: rgb(218, 216, 216);
+}
+
+.footer-copyright {
+    /* height: 5vh; */
+    background-color: #3d3d3d;
+    text-align: center;
+    color: rgb(233, 233, 233);
+}
+
+.footer-text-bottom {
+    font-size: 16px;
+    padding: 20px;
+    /* margin-top: 20px; */
+    
+}
+
+.col-fourth {
+    width: 25%;
+    margin: 14px 0;
+    padding-left: 10px;
+    margin-left: 50px;
+    margin-right: 30px;
+}
+
+
